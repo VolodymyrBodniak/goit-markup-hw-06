@@ -417,7 +417,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="close-modal-btn" data-modal-close>
           <svg class="close-modal-icon" width="8px" height="8px">
@@ -430,28 +430,43 @@
         <form class="modal-form">
           <label class="modal-form-field">
             <span class="modal-form-input-descr">Name</span>
-            <input
-              type="text"
-              name="user_name"
-              class="modal-form-input"
-              required
-              pattern="^[a-zA-Z]+$"
-            />
+            <span class="modal-form-input-wrapper">
+              <input
+                type="text"
+                name="user_name"
+                class="modal-form-input"
+                required
+                pattern="^[a-zA-Z]+$"
+              />
+              <svg class="modal-form-icon" with="18" height="18">
+                <use href="./images/icons.svg#icon-user_icon"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-input-descr">Phone</span>
-            <input
-              type="tel"
-              name="user_phone"
-              class="modal-form-input"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              required
-              title="xxx-xxx-xx-xx"
-            />
+            <span class="modal-form-input-wrapper">
+              <input
+                type="tel"
+                name="user_phone"
+                class="modal-form-input"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                required
+                title="xxx-xxx-xx-xx"
+              />
+              <svg class="modal-form-icon" with="18" height="24">
+                <use href="./images/icons.svg#icon-phone_icon"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-input-descr">Email</span>
-            <input type="email" name="email" class="modal-form-input" />
+            <span class="modal-form-input-wrapper">
+              <input type="email" name="email" class="modal-form-input" />
+              <svg class="modal-form-icon" with="18" height="24">
+                <use href="./images/icons.svg#icon-email_icon"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-input-descr">Comment</span>
