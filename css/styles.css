@@ -634,7 +634,7 @@ button {
   transform: translate(0, 0);
 }
 
-/* Modal window */
+//* Modal window */
 .backdrop {
   position: fixed;
   top: 0;
@@ -661,6 +661,8 @@ button {
   transform: translate(-50%, -50%);
   width: 408px;
   height: 576px;
+  padding: 72px 24px 24px;
+
   background-color: var(--white);
 }
 
@@ -696,4 +698,52 @@ button {
 .close-modal-btn:hover .close-modal-icon,
 .close-modal-btn:focus .close-modal-icon {
   fill: var(--white);
+}
+
+/* Modal form */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-request-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+}
+
+.modal-form-field {
+  margin-top: 8px;
+}
+
+.modal-form-input-descr {
+  display: block;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: var(--subtitle-text);
+}
+
+.modal-form-message {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: var(--subtitle-text);
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding-left: 38px;
 }
