@@ -634,7 +634,9 @@ button {
   transform: translate(0, 0);
 }
 
-* Modal window */ .backdrop {
+/* Modal window  */
+
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -700,6 +702,7 @@ button {
 }
 
 /* Modal form */
+
 .modal-form {
   display: flex;
   flex-direction: column;
