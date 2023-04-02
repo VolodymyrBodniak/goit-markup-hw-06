@@ -570,12 +570,10 @@ button {
 }
 
 .footer-form {
-  margin-top: 16px;
-}
-
-.footer-form-field {
   display: flex;
+  align-items: center;
   gap: 24px;
+  margin-top: 16px;
 }
 
 .footer-form-input {
@@ -740,7 +738,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  min-height: 576px;
+  min-height: 584px;
   padding: 72px 24px 24px;
 
   background-color: var(--white);
@@ -785,6 +783,7 @@ button {
 .modal-form {
   display: flex;
   flex-direction: column;
+  margin-top: 16px;
 }
 
 .modal-request-text {
@@ -798,7 +797,7 @@ button {
 }
 
 .modal-form-field {
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .modal-form-input-descr {
@@ -816,7 +815,6 @@ button {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-top: 4px;
   padding-left: 38px;
 
   color: var(--title-text-color);
@@ -832,6 +830,7 @@ button {
 .modal-form-input-wrapper {
   display: block;
   position: relative;
+  margin-top: 4px;
 }
 
 .modal-form-icon {
@@ -852,6 +851,7 @@ button {
 }
 
 .modal-form-message {
+  display: block;
   margin-top: 4px;
   padding: 8px 16px;
   width: 100%;
@@ -889,7 +889,7 @@ button {
 }
 
 .modal-form-check-copy {
-  display: block;
+  position: relative;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -902,7 +902,9 @@ button {
 }
 
 .modal-form-check-copy-icon {
-  display: block;
+  position: absolute;
+  left: -1px;
+  top: -1px;
   width: 16px;
   height: 16px;
   opacity: 0;
